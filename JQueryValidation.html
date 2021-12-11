@@ -1,0 +1,60 @@
+<html>
+<head>
+  <title>jQuery Validation - Example</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+  	.error{
+    	color: red;
+      font-style: italic;
+    }
+
+    .center {
+      margin: auto;
+      width: 40%;
+      border: 3px solid #1276d4;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+	<div class="center">    	
+            	<div style="text-align: center;">
+                	<b>JQuery validation plugin example</b>
+                  
+                </div>
+                <br/>
+                <div>
+                	<form id = "ValidationForm">
+                    <div class="form-group row col-sm-12">
+                      <input id="customerName" class="form-control" type = "text" name = "CustomerName" placeholder = "Customer name"/>
+                    </div>
+                    <div class="form-group row col-sm-12">
+                      <input id="accountNo" class="form-control" type = "text" name = "AccountNo" placeholder = "Account no"/>
+                    </div>                       
+                    <div class="form-group row col-sm-12">
+                      <input id="userName" class="form-control" type = "text" name = "UserName" placeholder = "User Name"/>
+                    </div>
+                    <Div class="form-group row col-sm-12">
+                      <input type = "password" class="form-control" name = "Password" placeholder = "Password" id = "password"/>
+                    </Div>
+                    <Div class="form-group row col-sm-12">
+                      <input type = "password" class="form-control" name = "Confirm" placeholder = "Confirm Password"/>
+                    </Div>
+                    <div  class="form-group row col-sm-12">
+                      <input id="startDate" class="form-control" type="date" pattern="\d{4}-\d{2}-\d{2}" name = "StartDate" placeholder = "Start Date"/>
+                    </div>
+                    <div  class="form-group row col-sm-12">
+                      <button id="saveData" class="btn btn-primary btn-block" type = "submit">Validate</button>
+                    </div>                        
+                  </form>
+                </div>
+            </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <script src="JQueryValidation.js"></script>  
+</body>
+</html>
